@@ -6,7 +6,40 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/22/2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-recipes-about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-recipes-about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-recipes-contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-recipes-contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-recipes-recipe-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-recipes-recipe-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-recipes-recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-recipes-recipes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/blog/healthy-food.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/blog/healthy-food.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/blog/meal-prep.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/blog/meal-prep.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/blog/piping-bag.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/blog/piping-bag.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/bf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/bf.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/desserts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/desserts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/dinner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/dinner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/drinks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/drinks.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/lunch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/lunch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/seafood.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/seafood.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/categories/veg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/categories/veg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/icons/email.svg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/icons/email.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/logo@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/logo@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/popular/side-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/popular/side-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/recipe-week-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/recipe-week-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/recipe-week.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/recipe-week.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/slider/dummy.png" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/slider/dummy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/recipes/images/subscribe-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/images/subscribe-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +90,7 @@
       <workItem from="1617448044763" duration="177000" />
       <workItem from="1684735395105" duration="124000" />
       <workItem from="1684735623588" duration="344000" />
-      <workItem from="1684736089214" duration="11775000" />
+      <workItem from="1684736089214" duration="15376000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -87,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684751479806</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5/22/2023">
+      <created>1684752436434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684752436435</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
