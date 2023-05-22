@@ -231,7 +231,7 @@
 	font-weight: 600;
 }
 
-.recipe-items .card-title a { color: #222; }
+.recipe-items .card-title a { color: #7c001f; }
 
 .recipe-items .card-date {
 	margin-top: 15px;
@@ -300,7 +300,7 @@
 	font-weight: 400 !important;
 	letter-spacing: 0;
 	font-size: 16px;
-	color: #111;
+	color: #ffffff;
 }
 
 .sub-menu-container .menu-link {
@@ -411,7 +411,7 @@ ol.list-preparation li:not(:first-child) { padding-top: 18px; }
 		height: 60px;
 		width: 51%;
 		transform: translateY(-50%);
-		background-color: rgba(255, 255, 255, 1);
+		background-color: #7c001f;
 		box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
