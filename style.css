@@ -2896,7 +2896,7 @@ html[xmlns] .slider-wrap {
 
 #header-wrap {
     position: relative;
-    background-color: #fff;
+    background-color:#7c001f;
     width: 100%
 }
 
@@ -3338,7 +3338,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     display: block;
     line-height: 22px;
     padding: 14px 5px;
-    color: #444;
+    color: #fff;
     font-weight: 700;
     font-size: .8125rem;
     letter-spacing: 1px;
@@ -3361,7 +3361,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 }
 
 .menu-item.current > .menu-link, .menu-item:hover > .menu-link {
-    color: #1abc9c
+    color: #fff;
 }
 
 .mega-menu-content, .sub-menu-container {
@@ -3381,7 +3381,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     padding: 11px 5px;
     font-size: .75rem;
     font-weight: 400;
-    color: #666;
+    color: #fff;
     letter-spacing: 0;
     font-family: Lato, sans-serif
 }
