@@ -44,7 +44,7 @@ dd, dl, dt, li, ol, ul {
 
 body {
     line-height: 1.5;
-    color: #555;
+    color: #fff;
     font-family: Lato, sans-serif
 }
 
@@ -3286,7 +3286,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 .svg-trigger path {
     fill: none;
     transition: stroke-dasharray .4s, stroke-dashoffset .4s;
-    stroke: #333;
+    stroke: #fff;
     stroke-width: 5;
     stroke-linecap: round
 }
@@ -3549,7 +3549,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     }
 
     .transparent-header.full-header .primary-menu .menu-container {
-        border-right-color: rgba(0, 0, 0, .1)
+        border-right-color: #fff;
     }
 
     .mega-menu {
