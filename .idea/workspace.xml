@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/23/2023">
-      <change afterPath="$PROJECT_DIR$/demos/recipes/images/wechat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/recipes/images/whatsapp.jpg" afterDir="false" />
+    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/24/2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demos/recipes/recipes.css" beforeDir="false" afterPath="$PROJECT_DIR$/demos/recipes/recipes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684825369567</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="5/24/2023">
+      <created>1684922566098</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684922566098</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +145,7 @@
     <MESSAGE value="Corporate Website Updated." />
     <MESSAGE value="5/22/2023" />
     <MESSAGE value="5/23/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="5/23/2023" />
+    <MESSAGE value="5/24/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="5/24/2023" />
   </component>
 </project>
