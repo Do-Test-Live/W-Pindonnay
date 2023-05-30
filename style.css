@@ -2952,7 +2952,7 @@ html[xmlns] .slider-wrap {
     }
 
     #header.transparent-header, #header.transparent-header:not(.sticky-header) #header-wrap {
-        background: 0 0;
+        background: #500014;
         border-bottom: 1px solid transparent;
         z-index: 299
     }
