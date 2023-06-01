@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/30/2023">
-      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/grid/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/31/2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +35,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/W-Pindonnay/images/blog/grid",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/W-Pindonnay/images/blog/grid&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\blog\grid" />
@@ -88,7 +75,8 @@
       <workItem from="1685003385119" duration="10000" />
       <workItem from="1685010194179" duration="1189000" />
       <workItem from="1685442777826" duration="3394000" />
-      <workItem from="1685512931693" duration="9242000" />
+      <workItem from="1685512931693" duration="10040000" />
+      <workItem from="1685598295333" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -181,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685446181694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="5/31/2023">
+      <created>1685535179892</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685535179892</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +200,7 @@
     <MESSAGE value="5/23/2023" />
     <MESSAGE value="5/24/2023" />
     <MESSAGE value="5/30/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="5/30/2023" />
+    <MESSAGE value="5/31/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="5/31/2023" />
   </component>
 </project>
