@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="5/31/2023">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -78,7 +77,10 @@
       <workItem from="1685442777826" duration="3394000" />
       <workItem from="1685512931693" duration="10040000" />
       <workItem from="1685598295333" duration="1091000" />
-      <workItem from="1685960296391" duration="1635000" />
+      <workItem from="1685960296391" duration="1715000" />
+      <workItem from="1687773489169" duration="4000" />
+      <workItem from="1687777405909" duration="1226000" />
+      <workItem from="1687853154381" duration="2596000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -178,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685535179892</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="05/06/2023">
+      <created>1685963575837</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685963575837</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +212,7 @@
     <MESSAGE value="5/24/2023" />
     <MESSAGE value="5/30/2023" />
     <MESSAGE value="5/31/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="5/31/2023" />
+    <MESSAGE value="05/06/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/06/2023" />
   </component>
 </project>
