@@ -3610,7 +3610,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     .mega-menu-content, .sub-menu-container {
         position: absolute;
         visibility: hidden;
-        width: 220px;
+        width: 100px;
         background-color: #7c001f;
         box-shadow: 0 13px 42px 11px rgba(0, 0, 0, .05);
         border: 1px solid rgba(3, 3, 3, 0.61);
