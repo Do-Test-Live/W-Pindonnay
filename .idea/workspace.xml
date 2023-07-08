@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/W-Pindonnay/images",
+    "last_opened_file_path": "C:/xampp/htdocs/W-Pindonnay/images/blog",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\W-Pindonnay\images\blog" />
+      <recent name="C:\xampp\htdocs\W-Pindonnay\demos" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\demos\recipes\images\popular" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\flag" />
-      <recent name="C:\xampp\htdocs\W-Pindonnay\images\blog\grid" />
-      <recent name="C:\xampp\htdocs\W-Pindonnay\demos\recipes\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\W-Pindonnay\images" />
@@ -88,7 +87,8 @@
       <workItem from="1687949911901" duration="2508000" />
       <workItem from="1688301238009" duration="3527000" />
       <workItem from="1688448340227" duration="3648000" />
-      <workItem from="1688540628327" duration="2545000" />
+      <workItem from="1688540628327" duration="2770000" />
+      <workItem from="1688815272210" duration="2804000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688460497737</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="05/07/2023">
+      <created>1688548393984</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688548393984</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +258,7 @@
     <MESSAGE value="05/06/2023" />
     <MESSAGE value="02/07/2023" />
     <MESSAGE value="04/07/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/07/2023" />
+    <MESSAGE value="05/07/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/07/2023" />
   </component>
 </project>

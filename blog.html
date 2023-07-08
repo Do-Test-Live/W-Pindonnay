@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="demos/modern-blog/modern-blog.css" type="text/css"/>
+    <link rel="stylesheet" href="demos/modern-blog/css/fonts.css" type="text/css"/>
     <!-- Document Title
     ============================================= -->
     <title>Blog-Pindonnay Wine Ltd Pindonnay Wine Ltd</title>
@@ -35,7 +37,7 @@
 
     <!-- Header
     ============================================= -->
-    <header id="header" class="transparent-header" data-sticky-shrink="false">
+    <header class="transparent-header" data-sticky-shrink="false" id="header" style="background-color: #500505 !important;">
         <div id="header-wrap">
             <div class="container">
                 <div class="header-row">
@@ -43,14 +45,21 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo" data-dark-logo="demos/recipes/images/logo.jpg" data-sticky-logo="demos/recipes/images/logo.jpg"><img src="demos/recipes/images/logo.jpg" id="logonew" alt="Canvas Logo"></a>
-                        <a href="index.html" class="retina-logo"><img src="demos/recipes/images/logo.jpg"
-                                                                      alt="Canvas Logo"></a>
+                        <a class="standard-logo" data-dark-logo="demos/recipes/images/logo.jpg"
+                           data-sticky-logo="demos/recipes/images/logo.jpg"
+                           href="index.html"><img alt="Canvas Logo"
+                                                  id="logonew" src="demos/recipes/images/logo.jpg"></a>
+                        <a class="retina-logo" href="index.html"><img alt="Canvas Logo"
+                                                                      src="demos/recipes/images/logo.jpg"></a>
                     </div><!-- #logo end -->
 
 
                     <div id="primary-menu-trigger">
-                        <svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+                        <svg class="svg-trigger" viewBox="0 0 100 100">
+                            <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                            <path d="m 30,50 h 40"></path>
+                            <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                        </svg>
                     </div>
 
                     <!-- Primary Navigation
@@ -65,52 +74,26 @@
                                 <div>About Us</div>
                             </a></li>
                             <li class="menu-item"><a class="menu-link" href="#">
-                                <div>Recipes <i class="icon-angle-down1 d-none d-lg-inline-block"></i></div>
-                            </a>
-                                <ul class="sub-menu-container rounded-bottom">
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Recipe Single Page</div>
-                                    </a></li>
-                                    <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Popular</div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Recent</div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Most liked</div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Most Commented</div>
-                                    </a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a class="menu-link" href="media.html">
-                                <div>Media</div>
+                                <div>Videos</div>
                             </a></li>
-                            <li class="menu-item"><a class="menu-link" href="news.html">
+                            <li class="menu-item"><a class="menu-link" href="#">
                                 <div>News</div>
                             </a></li>
-                            <li class="menu-item"><a class="menu-link" href="blog.html">
-                                <div>Blogs</div>
-                            </a></li>
                             <li class="menu-item"><a class="menu-link" href="#">
-                                <div>Contact Us</div>
-                            </a></li>
-                            <li class="menu-item"><a class="menu-link" href="#">
-                                <div>Language <i class="icon-angle-down1 d-none d-lg-inline-block"></i></div>
+                                <div>LAN <i class="icon-angle-down1 d-none d-lg-inline-block"></i></div>
                             </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>Chinese</div>
+                                        <div>
+                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                        </div>
                                     </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>English</div>
+                                        <div><img src="images/flag/united-kingdom.png" style="height: 40px; width: 40px;"></div>
                                     </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>French</div>
+                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
                                     </a></li>
                                 </ul>
                             </li>
@@ -118,10 +101,11 @@
 
                     </nav><!-- #primary-menu end -->
 
-                    <form class="top-search-form" action="#"
+                    <form action="#" class="top-search-form"
                           method="get">
-                        <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.."
-                               autocomplete="off">
+                        <input autocomplete="off" class="form-control" name="q" placeholder="Type &amp; Hit Enter.."
+                               type="text"
+                               value="">
                     </form>
 
                 </div>
@@ -130,351 +114,185 @@
         <div class="header-wrap-clone"></div>
     </header>
 
-    <!-- Page Title
-    ============================================= -->
-    <section id="page-title">
-
-        <div class="container clearfix">
-            <h1>Blog</h1>
-            <span>Our Latest News in Grid Layout</span>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
-            </ol>
-        </div>
-
-    </section><!-- #page-title end -->
-
     <!-- Content
     ============================================= -->
-    <section id="content">
-        <div class="content-wrap">
-            <div class="container clearfix">
+    <section id="slider" class="slider-element min-vh-60 min-vh-md-100">
+        <div class="fslider h-100 position-absolute" data-speed="1800" data-pause="5000" data-animation="fade"
+             data-arrows="true" data-pagi="false">
+            <div class="flexslider">
+                <div class="slider-wrap">
 
-                <!-- Posts
-                ============================================= -->
-                <div id="posts" class="post-grid row grid-container gutter-40 clearfix" data-layout="fitRows">
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <a href="images/blog/full/17.jpg" data-lightbox="image"><img src="images/blog/grid/17.jpg" alt="Standard Post with Image"></a>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with a Preview Image</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 13</a></li>
-                                    <li><a href="#"><i class="icon-camera-retro"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <iframe src="https://player.vimeo.com/video/87701971" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with a Vimeo Video</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 16th Feb 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 19</a></li>
-                                    <li><a href="#"><i class="icon-film"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem consectetur pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <div class="fslider" data-arrows="false" data-lightbox="gallery">
-                                    <div class="flexslider">
-                                        <div class="slider-wrap">
-                                            <div class="slide"><a href="images/blog/full/10.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/10.jpg" alt="Standard Post with Gallery"></a></div>
-                                            <div class="slide"><a href="images/blog/full/20.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/20.jpg" alt="Standard Post with Gallery"></a></div>
-                                            <div class="slide"><a href="images/blog/full/21.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/21.jpg" alt="Standard Post with Gallery"></a></div>
-                                        </div>
-                                    </div>
+                    <div class="slide text-center"
+                         style="background: url('images/blog/img11.jpg') center center; background-size: cover;">
+                        <div class="bg-overlay">
+                            <div class="bg-overlay-content align-items-end">
+                                <div class="slide-caption px-4 pb-4 dark">
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white">The Ultimate Guide To Fashion</a>
+                                    </h3>
+                                    <p class="h5">Monotonectally foster cross</p>
                                 </div>
                             </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with a Slider Gallery</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 24th Feb 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 21</a></li>
-                                    <li><a href="#"><i class="icon-picture"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image clearfix">
-                                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301161123&amp;auto_play=false&amp;hide_related=true&amp;visual=true"></iframe>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is an Embedded SoundCloud Post</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 28th Apr 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 16</a></li>
-                                    <li><a href="#"><i class="icon-music2"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SZEflIVnhH8" allowfullscreen></iframe>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with a Youtube Video</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 30th Apr 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 34</a></li>
-                                    <li><a href="#"><i class="icon-film"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image clearfix">
-                                <div class="fslider" data-animation="fade" data-pagi="false" data-lightbox="gallery">
-                                    <div class="flexslider">
-                                        <div class="slider-wrap">
-                                            <div class="slide"><a href="images/blog/full/2.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/2.jpg" alt="Standard Post with Gallery"></a></div>
-                                            <div class="slide"><a href="images/blog/full/3.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/3.jpg" alt="Standard Post with Gallery"></a></div>
-                                            <div class="slide"><a href="images/blog/full/12.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/12.jpg" alt="Standard Post with Gallery"></a></div>
-                                            <div class="slide"><a href="images/blog/full/13.jpg" data-lightbox="gallery-item"><img src="images/blog/grid/13.jpg" alt="Standard Post with Gallery"></a></div>
-                                        </div>
-                                    </div>
+                    <div class="slide text-center"
+                         style="background: url('images/blog/img12.jpg') center center; background-size: cover;">
+                        <div class="bg-overlay">
+                            <div class="bg-overlay-content align-items-end">
+                                <div class="slide-caption px-4 pb-4 dark">
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Learn How We Made Fashion</a>
+                                    </h3>
+                                    <p class="h5">Intrinsicly embrace scalable</p>
                                 </div>
                             </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with Fade Gallery</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 3rd Mar 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 21</a></li>
-                                    <li><a href="#"><i class="icon-picture"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
                         </div>
                     </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <a href="images/blog/full/1.jpg" data-lightbox="image"><img src="images/blog/grid/1.jpg" alt="Standard Post with Image"></a>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with another Preview Image</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 5th May 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 6</a></li>
-                                    <li><a href="#"><i class="icon-camera-retro"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image">
-                                <iframe width="480" height="270" src="https://www.dailymotion.com/embed/video/x18murk" allowfullscreen></iframe>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is a Standard post with a Dailymotion Video</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 11th May 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 9</a></li>
-                                    <li><a href="#"><i class="icon-film"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="entry-image clearfix">
-                                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/17521446&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a href="#">This is another Embedded Audio Post</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="icon-calendar3"></i> 15th May 2021</li>
-                                    <li><a href="#"><i class="icon-comments"></i> 2</a></li>
-                                    <li><a href="#"><i class="icon-music2"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
-                                <a href="#" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div><!-- #posts end -->
-
-                <div class="clear mt-5"></div>
-
-                <!-- Pagination
-                ============================================= -->
-                <div class="d-flex justify-content-between mt-5">
-                    <a href="#" class="btn btn-outline-secondary">&larr; Older</a>
-                    <a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
                 </div>
-                <!-- .pager end -->
-
             </div>
         </div>
-    </section><!-- #content end -->
+    </section>
 
-    <!-- Footer
-    ============================================= -->
-    <footer id="footer" class="bg-white border-0">
+    <section id="content" class="bg-light">
+        <div class="content-wrap pt-lg-0 pt-xl-0 pb-0">
+            <div class="container clearfix">
+                <div class="heading-block border-bottom-0 center pt-4 mb-3">
+                    <h3>Articles</h3>
+                </div>
 
-        <!--<div class="container">
+                <div class="row grid-container infinity-wrapper clearfix">
 
-            &lt;!&ndash; Footer Widgets
-            ============================================= &ndash;&gt;
-            <div class="footer-widgets-wrap">
-
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-5 text-left">
-                        <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
-                            <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a href="#" class="text-black-50">Home</a></li>
-                                <li class="mb-2"><a href="#" class="text-black-50">About</a></li>
-                                <li class="mb-2"><a href="#" class="text-black-50">FAQs</a></li>
-                                <li class="mb-2"><a href="#" class="text-black-50">Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-md-5 col-7 text-left">
-                        <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
-                            <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
-                                <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a href="tel:+85256408956">(+852) 56408956</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-2 col-12 text-lg-right text-sm-left">
-                        <div id="instagram" class="widget clearfix">
-                            <div class="row text-left">
-                                <h4 class="ls0 nott" style="padding-left: 20px">Social Media Link</h4>
+                    <div class="col-md-6 p-3">
+                        <div class="entry mb-1 clearfix">
+                            <div class="entry-image mb-3">
+                                <a href="images/blog/01img.jpg" data-lightbox="image"
+                                   style="background: url('images/blog/01img.jpg') no-repeat center center; background-size: cover; height: 278px;"></a>
                             </div>
-                            <a href="#"><img src="demos/recipes/images/whatsapp.jpg" style="height: 92px;width: 92px;" alt="App Link"></a>
-                            <a href="#"><img src="demos/recipes/images/wechat.jpg" style="height: 92px;width: 92px;" alt="App Link" class="mt-2"></a>
+                            <div class="entry-title">
+                                <h3><a href="#">How To Make More travel By Doing Less</a></h3>
+                            </div>
+                            <div class="entry-content">
+                                <p>Distinctively unleash e-business testing procedures vis-a-vis future-proof
+                                    leadership. Energistically synthesize leveraged e-business whereas proactive.</p>
+                            </div>
+                            <div class="entry-meta no-separator nohover">
+                                <ul class="justify-content-between mx-0">
+                                    <li><i class="icon-calendar2"></i> 10th Feb 2021</li>
+                                    <li>MockUp</li>
+                                </ul>
+                            </div>
+                            <div class="entry-meta no-separator hover">
+                                <ul class="mx-0">
+                                    <li><a href="#">View More &rarr;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="entry mb-1 clearfix">
+                            <div class="entry-image mb-3">
+                                <a href="images/blog/02img.jpg" data-lightbox="image"
+                                   style="background: url('images/blog/02img.jpg') no-repeat center center; background-size: cover; height: 278px;"></a>
+                            </div>
+                            <div class="entry-title">
+                                <h3><a href="#">How To Make More travel By Doing Less</a></h3>
+                            </div>
+                            <div class="entry-content">
+                                <p>Distinctively unleash e-business testing procedures vis-a-vis future-proof
+                                    leadership. Energistically synthesize leveraged e-business whereas proactive.</p>
+                            </div>
+                            <div class="entry-meta no-separator nohover">
+                                <ul class="justify-content-between mx-0">
+                                    <li><i class="icon-calendar2"></i> 10th Feb 2021</li>
+                                    <li>MockUp</li>
+                                </ul>
+                            </div>
+                            <div class="entry-meta no-separator hover">
+                                <ul class="mx-0">
+                                    <li><a href="#">View More &rarr;</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
-            </div>
-
-        </div>-->
-
-        <!-- Copyrights
-        ============================================= -->
-        <div id="copyrights" class="">
-
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-sm-4 d-flex justify-content-sm-start mb-3 mb-sm-0" style="color: white">
-                        Copyrights &copy; 2023 All Rights Reserved by Pindonnay.
-                    </div>
-                    <div class="col-sm-4 d-flex justify-content-sm-center mb-3 mb-sm-0">
-                        <a href="#" target="_blank"
-                           class="social-icon si-small si-colored si-facebook" title="Facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-                        <a href="#" target="_blank"
-                           class="social-icon si-small si-colored si-twitter" title="Twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
-                        <a href="#" target="_blank"
-                           class="social-icon si-small si-colored si-youtube" title="youtube">
-                            <i class="icon-youtube"></i>
-                            <i class="icon-youtube"></i>
-                        </a>
-                        <a href="#" target="_blank"
-                           class="social-icon si-small si-colored si-instagram" title="instagram">
-                            <i class="icon-instagram"></i>
-                            <i class="icon-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 d-flex justify-content-sm-end">
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                <div class="text-center">
+                    <div class="page-load-status hovering-load-status">
+                        <div class="css3-spinner infinite-scroll-request">
+                            <div class="css3-spinner-ball-pulse-sync">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning center infinite-scroll-last mx-auto" style="max-width: 20rem;">
+                            End of content
+                        </div>
+                        <div class="alert alert-warning center infinite-scroll-error mx-auto" style="max-width: 20rem;">
+                            No more pages to load
+                        </div>
                     </div>
                 </div>
+                <div class="center d-none">
+                    <a href="demo-modern-blog-2.html" class="load-next-posts"></a>
+                </div>
             </div>
+            <div class="section bg-white pt-4 pb-0 topmargin-sm mb-0">
+                <div class="container">
+                    <div class="heading-block d-flex justify-content-center center border-bottom-0 mb-4">
+                        <img src="demos/modern-blog/images/instagram.png" class="align-self-center" alt="Image"
+                             height="28">
+                        <h3 class="ms-2 text-capitalize ls0 align-self-center">Instagram Feed</h3>
+                    </div>
+                </div>
+                <div class="instagram-button position-relative">
+                    <div id="instagram-photos" class="instagram-photos masonry-thumbs grid-container grid-6"
+                         data-user="blog.canvastemplate"></div>
+                    <a href="#" class="button bg-white button-light button-rounded text-dark m-0 clearfix">Follow us on
+                        Instagram</a>
+                </div>
+            </div>
+        </div>
+        <footer>
 
-        </div><!-- #copyrights end -->
+            <div id="copyrights" class="">
 
-    </footer><!-- #footer end -->
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-4 d-flex justify-content-sm-start mb-3 mb-sm-0" style="color: white">
+                            Copyrights &copy; 2023 All Rights Reserved by Pindonnay.
+                        </div>
+                        <div class="col-sm-4 d-flex justify-content-sm-center mb-3 mb-sm-0">
+                            <a href="#" target="_blank"
+                               class="social-icon si-small si-colored si-facebook" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                               class="social-icon si-small si-colored si-twitter" title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                               class="social-icon si-small si-colored si-youtube" title="youtube">
+                                <i class="icon-youtube"></i>
+                                <i class="icon-youtube"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                               class="social-icon si-small si-colored si-instagram" title="instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 d-flex justify-content-sm-end">
+                            <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+    <!-- #content end -->
 
 </div><!-- #wrapper end -->
 
