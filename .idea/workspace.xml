@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="update all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demos/recipes/images/popular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/blog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,11 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\W-Pindonnay\images\blog" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\demos\recipes\images\popular" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\demos\recipes\images" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\flag" />
-      <recent name="C:\xampp\htdocs\W-Pindonnay\images\blog\grid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\W-Pindonnay\images" />
@@ -84,7 +85,7 @@
       <workItem from="1688301238009" duration="3527000" />
       <workItem from="1688448340227" duration="3648000" />
       <workItem from="1688540628327" duration="2545000" />
-      <workItem from="1689244567361" duration="3382000" />
+      <workItem from="1689244567361" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689247821493</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update all">
+      <created>1689248345468</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1689248345468</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
