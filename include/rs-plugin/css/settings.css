@@ -1508,7 +1508,7 @@ img.tp-slider-alternative-image {
 .tparrows:before {
     font-family: revicons;
     font-size: 15px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
     display: block;
     line-height: 40px;
     text-align: center
