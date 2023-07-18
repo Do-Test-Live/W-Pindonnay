@@ -12,7 +12,7 @@
 }
 
 #header.sticky-header.transparent-header #header-wrap:not(.not-dark) {
-    background-color: #500505 !important;
+    background-color: #ffffffc4 !important;
     box-shadow: none
 }
 
@@ -63,7 +63,7 @@
     }
 
     #content {
-        margin-top: -80px
+        margin-top: 0
     }
 }
 

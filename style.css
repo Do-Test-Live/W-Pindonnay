@@ -2952,7 +2952,7 @@ html[xmlns] .slider-wrap {
     }
 
     #header.transparent-header, #header.transparent-header:not(.sticky-header) #header-wrap {
-        background: #50001400;
+        background: #ffffff6e;
         border-bottom: 1px solid transparent;
         z-index: 299
     }
@@ -3039,7 +3039,7 @@ html[xmlns] .slider-wrap {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #500505;
+        background-color: #ffffff;
         box-shadow: 0 0 10px rgba(0, 0, 0, .1)
     }
 
@@ -3338,7 +3338,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     display: block;
     line-height: 22px;
     padding: 14px 5px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: .8125rem;
     letter-spacing: 1px;
@@ -3361,7 +3361,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 }
 
 .menu-item.current > .menu-link, .menu-item:hover > .menu-link {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .mega-menu-content, .sub-menu-container {
@@ -14034,7 +14034,6 @@ button.toast-close-button {
     display: inline-block;
     margin: 0 3px;
     color: #fff;
-    border-bottom: 1px dotted #444
 }
 
 .copyright-links a:hover {
