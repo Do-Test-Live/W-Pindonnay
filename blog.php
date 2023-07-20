@@ -83,7 +83,7 @@ $db_handle = new DBController();
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="video.html">
                                     <div>Videos</div>
                                 </a>
                             </li>

@@ -10,7 +10,7 @@
 .dark h4,
 .dark h5,
 .dark h6 {
-	color: #EEE;
+	color: #000000;
 }
 
 .dark a:not([class*="btn-"]):hover {

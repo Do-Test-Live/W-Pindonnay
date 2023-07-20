@@ -69,7 +69,7 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="video.html">
                                     <div>Videos</div>
                                 </a>
                             </li>
