@@ -146,9 +146,9 @@ $db_handle = new DBController();
                         <div class="bg-overlay">
                             <div class="bg-overlay-content align-items-end">
                                 <div class="slide-caption px-4 pb-4 dark">
-                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Pindonnay Wine</a>
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white"></a>
                                     </h3>
-                                    <p class="h5">Pindonnay Wine</p>
+                                    <p class="h5"></p>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +159,9 @@ $db_handle = new DBController();
                         <div class="bg-overlay">
                             <div class="bg-overlay-content align-items-end">
                                 <div class="slide-caption px-4 pb-4 dark">
-                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Pindonnay Wine</a>
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white"></a>
                                     </h3>
-                                    <p class="h5">Pindonnay Wine</p>
+                                    <p class="h5"></p>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,6 @@ $db_handle = new DBController();
         <div class="content-wrap pt-lg-0 pt-xl-0 pb-0">
             <div class="container clearfix">
                 <div class="heading-block border-bottom-0 center pt-4 mb-3">
-                    <h3>Blogs</h3>
                 </div>
 
                 <div class="row grid-container infinity-wrapper clearfix">
@@ -266,11 +265,6 @@ $db_handle = new DBController();
                                class="social-icon si-small si-colored si-facebook" title="Facebook">
                                 <i class="icon-facebook"></i>
                                 <i class="icon-facebook"></i>
-                            </a>
-                            <a href="#" target="_blank"
-                               class="social-icon si-small si-colored si-twitter" title="Twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
                             </a>
                             <a href="#" target="_blank"
                                class="social-icon si-small si-colored si-youtube" title="youtube">

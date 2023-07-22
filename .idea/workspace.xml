@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/category-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/W-Pindonnay/images/categories",
+    "last_opened_file_path": "C:/xampp/htdocs/W-Pindonnay/images/bottol",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,11 +53,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\W-Pindonnay\images\bottol" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\categories" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\about_us" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\demos\recipes\images\popular" />
       <recent name="C:\xampp\htdocs\W-Pindonnay\images\video" />
-      <recent name="C:\xampp\htdocs\W-Pindonnay" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\W-Pindonnay\demos" />
@@ -103,6 +100,7 @@
       <workItem from="1689248002807" duration="70000" />
       <workItem from="1689672927130" duration="8813000" />
       <workItem from="1689831358990" duration="11288000" />
+      <workItem from="1690022477073" duration="3601000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689851194099</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="22/07/2023">
+      <created>1690022542034</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690022542034</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +302,7 @@
     <MESSAGE value="08/07/2023" />
     <MESSAGE value="18/07/2023" />
     <MESSAGE value="20/07/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="20/07/2023" />
+    <MESSAGE value="22/07/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="22/07/2023" />
   </component>
 </project>

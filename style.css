@@ -16390,3 +16390,20 @@ label.checkbox, label.radio {
     align-items: center;
     z-index: 9999; /* Ensure the preloader appears on top of other elements */
 }
+
+.image-container {
+    display: flex;
+}
+
+/* Style each image */
+.image-container img {
+    width: 159px;
+    height: 600px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom in on hover */
+.image-container img:hover {
+    transform: scale(1.1);
+}
