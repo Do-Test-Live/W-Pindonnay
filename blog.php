@@ -78,7 +78,7 @@ $db_handle = new DBController();
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="about_us.html">
                                     <div>About Us</div>
                                 </a>
                             </li>
@@ -96,24 +96,24 @@ $db_handle = new DBController();
                                 <a class="menu-link" href="#">
                                     <div>
                                         <img src="images/flag/united-kingdom.png"
-                                              style="height: 25px; width: 25px;">
+                                             style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -146,9 +146,9 @@ $db_handle = new DBController();
                         <div class="bg-overlay">
                             <div class="bg-overlay-content align-items-end">
                                 <div class="slide-caption px-4 pb-4 dark">
-                                    <h3 class="mb-2 h1"><a href="#" class="text-white">The Ultimate Guide To Fashion</a>
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Pindonnay Wine</a>
                                     </h3>
-                                    <p class="h5">Monotonectally foster cross</p>
+                                    <p class="h5">Pindonnay Wine</p>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +159,9 @@ $db_handle = new DBController();
                         <div class="bg-overlay">
                             <div class="bg-overlay-content align-items-end">
                                 <div class="slide-caption px-4 pb-4 dark">
-                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Learn How We Made Fashion</a>
+                                    <h3 class="mb-2 h1"><a href="#" class="text-white">Pindonnay Wine</a>
                                     </h3>
-                                    <p class="h5">Intrinsicly embrace scalable</p>
+                                    <p class="h5">Pindonnay Wine</p>
                                 </div>
                             </div>
                         </div>

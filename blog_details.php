@@ -64,7 +64,7 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="about_us.html">
                                     <div>About Us</div>
                                 </a>
                             </li>
@@ -82,24 +82,24 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
                                 <a class="menu-link" href="#">
                                     <div>
                                         <img src="images/flag/united-kingdom.png"
-                                              style="height: 25px; width: 25px;">
+                                             style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                     <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
