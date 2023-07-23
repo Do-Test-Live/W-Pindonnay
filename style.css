@@ -16397,8 +16397,7 @@ label.checkbox, label.radio {
 
 /* Style each image */
 .image-container img {
-    width: 159px;
-    height: 600px;
+    height: 550px;
     margin: 5px;
     transition: transform 0.3s ease;
 }
@@ -16406,4 +16405,12 @@ label.checkbox, label.radio {
 /* Zoom in on hover */
 .image-container img:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 550px) {
+    .image-container img {
+        height: 100%;
+        margin: 5px;
+        transition: transform 0.3s ease;
+    }
 }
