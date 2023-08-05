@@ -36,10 +36,10 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
                     ============================================= -->
                     <div id="logo">
                         <a class="standard-logo" data-dark-logo="demos/recipes/images/logo.png"
-                           data-sticky-logo="demos/recipes/images/logo.png" href="index.html">
+                           data-sticky-logo="demos/recipes/images/logo.png" href="index.php">
                             <img alt="" id="logonew" src="demos/recipes/images/logo.png">
                         </a>
-                        <a class="retina-logo" href="index.html">
+                        <a class="retina-logo" href="index.php">
                             <img alt="" src="demos/recipes/images/logo.png">
                         </a>
                     </div><!-- #logo end -->
@@ -59,12 +59,12 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
 
                         <ul class="menu-container">
                             <li class="menu-item current">
-                                <a class="menu-link" href="index.html">
+                                <a class="menu-link" href="index.php">
                                     <div>Home</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="about_us.html">
+                                <a class="menu-link" href="about_us.php">
                                     <div>About Us</div>
                                 </a>
                             </li>
@@ -123,7 +123,7 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
         <div class="container clearfix">
             <h1></h1>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item"><a href="blog.php">Blog</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog Single</li>
             </ol>

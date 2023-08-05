@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -121,11 +128,18 @@
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.html">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Home FR';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo 'Home CN';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="about_us.html">
+                                <a class="menu-link" href="about_us.php">
                                     <div>About Us</div>
                                 </a>
                             </li>
@@ -142,23 +156,31 @@
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
                                         <div>
                                             <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
                                         </div>
                                     </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
                                         <div><img src="images/flag/united-kingdom.png"
                                                   style="height: 40px; width: 40px;"></div>
                                     </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
                                         <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
                                     </a></li>
                                 </ul>
@@ -208,7 +230,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 offset-md-2 center">
-                            <p style="font-size: 17px;">The enchantment of Burgundy is not in the 33 Grand Cru but in the 3577 domains and 1247 Climats.
+                            <p style="font-size: 17px;">
+                            <div>
+                                <?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'The enchantment of Burgundy is not in the 33 Grand Cru but in the 3577 domains and 1247 Climats.';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Le fascination de la Bourgogne ne réside pas dans les 33 grands crus, mais dans les 3577 domaines et 1247 climats.';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '勃艮第的迷人不在於33個特級園，在於3577間domaines和1247個climats。';
+                                ?></div>
                             </p>
                             <div class="row">
                                 <div class="col-6 text-right">

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])) {
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -121,11 +128,18 @@
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.html">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if ($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Home FR';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo 'Home CN';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="about_us.html">
+                                <a class="menu-link" href="about_us.php">
                                     <div>About Us</div>
                                 </a>
                             </li>
@@ -142,25 +156,34 @@
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -195,29 +218,55 @@
                     </div>
                     <div class="row" style="text-align: justify">
                         <div class="col-12">
-                            <p>Pindonnay Wine was co-founded by Dason HO and Vincy ZHANG; Our name originates from the
-                                fusion of Pinot Noir and Chardonnay, signifying our company's dedication to the promotion of
-                                the Burgundy wine culture.</p>
-                            <p>Dason HO, a graduate of Food Science and Nutrition from the Chinese University of Hong Kong,
-                                continued his studies in Burgundy, France for seven years. He has a degree from the
-                                Institute of Vine and Wine (Institute Jules Guyot) at the University of Burgundy with
-                                specializations in oenology and viticulture. He also holds a master’s degree in Wine and
-                                Spirits Business from the Burgundy School of Business, as well as a professional diploma in
-                                wine culture and history and a professional diploma in wine tourism. Today, he settles in
-                                Burgundy.</p>
-                            <p>Vincy Zhang graduated from the mathematics program at the University of Toronto in Canada and
-                                holds professional qualifications such as the Japanese SSI sake sommelier and WSET Diploma.
-                                Vincy previously operated a premium Japanese sake trading company in Beijing before residing
-                                in Burgundy and obtaining a master’s degree in wine and spirits trade from the Burgundy
-                                School of Business.</p>
-                            <p>The fascination of Burgundy lies in its diversity and complexity rather than in its nobility
-                                and costliness. The 33 Grand Cru of Burgundy can offer only the ultimate experience to wine
-                                enthusiasts, but it is only through the 1,247 "climats" that one can truly grasp the
-                                grandeur and splendor of Burgundy.</p>
-                            <p>A bottle of unrivalled Grand Cru Burgundy wine can leave us shaken, but a bottle of Hautes
-                                Côtes de Nuits can also bring us joy and happiness. Our pursuit is to help more wine
-                                enthusiasts understand that the meaning of wine lies not in its value, but in the momentary
-                                emotions and warmth it can bring to our spirits.</p>
+                            <?php
+                            if ($_SESSION['lan'] == 'EN')
+                                echo '<p> Vincent Palloti was among the noble in Spain, his youthful age marked with appointment as a deacon by Valerius who 
+                                        served as Bishop of Saragosse and was a notable figure on the Council of Elvira in those times. Subsequently, Vincent was promoted to an archdeacon and given the 
+                                        responsibility of overseeing the diocese of Saragosse. It was in the fateful year of 304 when the Roman Emperor Diocletian unleashed a terrible persecution against 
+                                        the Christians that Vincent, along with his bishop, became an early martyr.He finally died on January 22nd of that year, supposedly crushed to death under a grape press.
+                                        </p>
+                                        <p> Saint Vincent is famous as the god of wine and is also regarded as the protector of every winegrower, watching over their vineyards from generation to generation. The 
+                                        most widespread theory comes from the play on words Vincent, Vincent, which means both wine and blood, the blood of the vine or referring to the Church tradition that the 
+                                        wine of divine service recalled the blood of Christ.Furthermore, there is a story of Saint Vincent in the vineyards. According to legend, one day Saint Vincent stopped to 
+                                        talk to a vineyard worker as he passed by a vineyard, during which his donkey ate the young vine shoots on the side. However, during the following harvest, the vineyard worker 
+                                        found that the vine eaten by Saint Vincent\'s donkey yielded more than the other vines that had not been eaten, so the vineyard worker dedicated Saint Vincent\'s donkey as the 
+                                        inventor of vine pruning.The pruning of Burgundy vineyards is strictly carried out in accordance with the decree of February 8, 1946 and the orders of March 15, 1944 and September 17, 
+                                        1956, which establish the regulatory periods provided for this task. Therefore, no vine pruning will be carried out before the feast of Saint Vincent (January 22nd). However, 
+                                        these legal provisions were not established with reference to the legend of Saint Vincent, but based on the production cycles of the vine.During the 20th century, the secularization 
+                                        of French society nearly caused the disappearance of the feast of Saint Vincent. Only a few villages in Burgundy maintained this tradition, simply celebrating the feast during the 
+                                        end-of-year pig roast. 
+                                        </p>
+                                        <p> On January 22, 1938, the Brotherhood of the Knights of the Tastevin restored the procession of Saint Vincent in Chambolle-Musigny. Today, more than 
+                                        85 Winegrowers\' Societies participate in the Saint Vincent Tournante every last weekend of January.This festival has become a major annual event in the wine circle of Burgundy 
+                                        attracting tens of thousands of local and international visitors each year to participate in this grand celebration. 
+                                        </p>
+                                        <p> Outside of Burgundy in other wine regions of France as well as in the Spanish wine regions of Rioja Navarre and Penedès parades and celebrations of Saint Vincent are also organized. 
+                                        However, Saint Vincent celebrations in other regions cannot in any way compete with the Saint Vincent Tournante of Burgundy in terms of renown and size.
+                                        </p>';
+                            elseif ($_SESSION['lan'] == 'FR')
+                                echo '<p> Vincent PALLOTI est né dans une famille noble en Espagne, et à un très jeune âge, il a été nommé diacre par Valerius, évêque de Saragosse, qui était alors membre du concile d’Elvira (300-330), puis est devenu archidiacre, responsable de l’administration des biens du diocèse de Saragosse.</p>
+                                     <p> En l \'an 304, l\'empereur romain Dioclétien lança une grande persécution contre les chrétiens. Vincent PALLOTI fut l/un des premiers chrétiens martyrisés avec son évêque. Il mourut finalement le 22 janvier de cette année-là, supposément écrasé à mort sous un pressoir à raisins. </p>
+                                        <p> Saint Vincent est célèbre en tant que dieu du vin et est également considéré comme le protecteur de chaque vigneron, veillant sur ses vignobles de génération en génération. La théorie la plus répandue vienton jeu de mots Vincent, Vincent, signifiant à la fois « vin » et « sang », le sang de la vigne ou se référant à la tradition de l’Église comme quoi le vin de l’office divin rappelait le sang du Christ.</p>
+                                           <p> En outre, il y a une histoire de Saint Vincent dans les vignes. Selon la légende, un jour Saint Vincent s’arrêta pour parler au vigneron lorsqu’il passa devant un vignoble, au cours duquel son âne mangea les jeunes sarments des vignes sur le côté. Cependant, lors des vendanges suivantes, le vigneron a constaté que la vigne mangée par l’âne de Saint-Vincent donnait plus que les autres vignes qui n’avaient pas été mangées, de sorte que le vigneron a consacré l’âne de Saint-Vincent comme l’inventeur de la taille de la vigne.</p>
+                                              <p> La taille des vignes de Bourgogne est effectuée strictement conformément au décret du 8 février 1946 et aux arrêtés des 15 mars 1944 et 17 septembre 1956, qui établissent les périodes réglementaires prévues pour cette tâche. Ainsi, aucune taille de vigne ne sera effectuée avant la fête de Saint Vincent (le 22 janvier). Cependant, ces dispositions légales n \'ont pas été établies en référence à la légende de Saint Vincent, mais sur la base des cycles de production de la vigne.</p>
+                                                 <p> Au cours du 20ème siècle, la laïcisation de la société en France a failli faire disparaître la fête de Saint Vincent. Seules quelques villages de Bourgogne ont maintenu cette tradition, en célébrant simplement la fête lors du repas de cochon en fin d\'année.</p>
+                                                    <p> Le 22 janvier 1938, la confrérie des chevaliers du Tastevin a rétabli la procession de Saint Vincent à Chambolle-Musigny. Aujourd\'hui, plus de 85 Sociétés des vignerons participent à la Saint Vincent Tournante chaque dernier week-end de janvier. Cette fête est devenue l\'événement annuel majeur dans le cercle viticole de Bourgogne, attirant des dizaines de milliers de visiteurs locaux et internationaux chaque année pour participer à cette célébration grandiose.</p>
+                                                    <p>En dehors de la Bourgogne, dans d\'autres régions viticoles de France, ainsi que dans les régions viticoles espagnoles de Rioja, Navarre et Penedès, des défilés et célébrations de saint Vincent sont également organisés. Cependant, les célébrations de saint Vincent dans les autres régions ne peuvent en aucun cas rivaliser avec la Saint Vincent Tournante de Bourgogne en termes de renommée et de taille.</p>
+                                        ';
+                            elseif ($_SESSION['lan'] == 'CN')
+                                echo '<p>Vincent PALLOTI 出生於西班牙的貴族家庭，在很年輕的時候，他就被萨拉戈萨主教瓦勒里乌斯（Valerius）任命为执事，當時他是埃尔维拉会议（300-330）的成员之一，然后更成為大执事，负责管理萨拉戈萨教区的财产。</p>
+                                        <p>304年，羅馬帝國皇帝戴克里先對基督徒展開了大規模的迫害，Vincent PALLOTI是第一批隨著主教而受害的基督徒之一，最終在當年的1月22日逝世，相傳是被壓在葡萄壓榨機上折磨致死。</p>
+                                       
+                                        <p> Saint Vincent 被譽為葡萄酒的酒神，也是每一位葡萄酒農的守護神，世代守護著他們的葡萄園。最廣為流傳的一個說法是來自他一語雙關的名字 vincent，意指 vin sang，教會認為葡萄酒是耶穌基督的血。</p>
+                                        
+                                        <p> 此外，在葡萄園方面也流傳著一個和saint vincent有關的故事。相傳，有一天saint vincent路過一處葡萄園，便停下來和酒農交談了幾句，在此期間，他的驢子把傍邊的葡萄樹嫩芽吃掉。然而在下一年採收的時候，葡萄酒農發現被saint vincent驢子吃過的葡萄樹，它的產量比其他沒有吃過的葡萄樹更大，因此，葡萄酒農把saint vincent的驢子奉為葡萄樹修剪（taille）發明者。</p>
+                                       <p>勃根地的葡萄園剪枝（taille）嚴格遵照1946年2月8號的法令（décret）和1944年3月15日和1956年9月17日的決議（arrêtés） 所規定的時間進行，也就是在saint vincent節（1月22日）前不會進行任何的葡萄園剪枝。然而這些法令卻不是基於saint vincent的傳說而頒布的，而是根據葡萄樹的生產週期而作出的規範。</p> 
+                                       <p> 20世紀，法國大規模的世俗主義推行（la laïcisation de la société）幾乎讓saint Vincent 這個節日消失，當時僅有幾條勃根地的村子保留著這個節日，而且還只是在年尾的殺豬宴（repas de cochon）上舉行簡單的慶祝。
+                                           1938年的1月22日， 勃根地騎士會（la confrérie des chavaliers du Tastevin）在Chambolle-Musigny村重新復辦了Saint vincent 巡遊。時至今日，勃根地已經有超過85個葡萄酒組織（la Société des vignerons ）參與每年1月最後一個週末舉行的saint Vincent Tournante，這個節日已經成為了勃根地葡萄酒圈中的年度盛事，每一年吸引著數以萬計的外地以及海外遊客到勃根地參加這個盛大的節慶活動。
+                                             除勃根地之外，在法國其他的葡萄酒產區，以及西班牙的Rioja, Navarra ，Penedès等的葡萄酒產區也會舉行saint vinvent遊行和慶祝活動。然而其他產區的saint vincent慶祝活動無論從知名度上還是規模上都無法和勃根地的 saint Vincent tournante相提並論。
+                                     </p>';
+                            ?>
+
                         </div>
                     </div>
                 </div>
@@ -255,9 +304,9 @@
                             <h4 class="ls0 nott">Contact</h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
-                                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
+                                            href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
                                 <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
-                                        href="tel:+85256408956">(+852) 56408956</a></li>
+                                            href="tel:+85256408956">(+852) 56408956</a></li>
                             </ul>
                         </div>
                         <div class="clearfix" id="instagram">
