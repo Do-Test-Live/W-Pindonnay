@@ -121,7 +121,7 @@ $blog_details = $db_handle->runQuery("select * from blog where id = '$blog_id'")
 
     <section id="page-title">
         <div class="container clearfix">
-            <h1>Blog Details</h1>
+            <h1></h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="blog.php">Blog</a></li>
