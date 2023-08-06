@@ -104,10 +104,10 @@ if (!isset($_SESSION['lan'])) {
                     ============================================= -->
                     <div id="logo">
                         <a class="standard-logo" data-dark-logo="demos/recipes/images/logo.png"
-                           data-sticky-logo="demos/recipes/images/logo.png" href="index.html">
+                           data-sticky-logo="demos/recipes/images/logo.png" href="index.php">
                             <img alt="" id="logonew" src="demos/recipes/images/logo.png">
                         </a>
-                        <a class="retina-logo" href="index.html">
+                        <a class="retina-logo" href="index.php">
                             <img alt="" src="demos/recipes/images/logo.png">
                         </a>
                     </div><!-- #logo end -->
@@ -127,30 +127,51 @@ if (!isset($_SESSION['lan'])) {
 
                         <ul class="menu-container">
                             <li class="menu-item current">
-                                <a class="menu-link" href="index.html">
+                                <a class="menu-link" href="index.php">
                                     <div><?php
-                                        if ($_SESSION['lan'] == 'EN')
+                                        if($_SESSION['lan'] == 'EN')
                                             echo 'Home';
                                         elseif ($_SESSION['lan'] == 'FR')
-                                            echo 'Home FR';
+                                            echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo 'Home CN';
+                                            echo '家';
                                         ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -181,8 +202,7 @@ if (!isset($_SESSION['lan'])) {
                                                       style="height: 40px; width: 40px;"></div>
                                         </a></li>
                                     <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
-                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;">
-                                            </div>
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
                                         </a></li>
                                 </ul>
                             </li>
@@ -228,7 +248,8 @@ if (!isset($_SESSION['lan'])) {
                                         <p> Saint Vincent is famous as the god of wine and is also regarded as the protector of every winegrower, watching over their vineyards from generation to generation. The 
                                         most widespread theory comes from the play on words Vincent, Vincent, which means both wine and blood, the blood of the vine or referring to the Church tradition that the 
                                         wine of divine service recalled the blood of Christ.Furthermore, there is a story of Saint Vincent in the vineyards. According to legend, one day Saint Vincent stopped to 
-                                        talk to a vineyard worker as he passed by a vineyard, during which his donkey ate the young vine shoots on the side. However, during the following harvest, the vineyard worker 
+                                        talk to a vineyard worker as he passed by a vineyard, during which his donkey ate the young vine shoots on the side.</P>
+                                        <P>However, during the following harvest, the vineyard worker 
                                         found that the vine eaten by Saint Vincent\'s donkey yielded more than the other vines that had not been eaten, so the vineyard worker dedicated Saint Vincent\'s donkey as the 
                                         inventor of vine pruning.The pruning of Burgundy vineyards is strictly carried out in accordance with the decree of February 8, 1946 and the orders of March 15, 1944 and September 17, 
                                         1956, which establish the regulatory periods provided for this task. Therefore, no vine pruning will be carried out before the feast of Saint Vincent (January 22nd). However, 
@@ -289,19 +310,61 @@ if (!isset($_SESSION['lan'])) {
                 <div class="row">
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Support';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Soutien';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '支持';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de" or "Sur';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'FAQs';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Questions fréquemment posées';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '常见问题';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Support';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Soutien';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '支持';
+                                        ?></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Contact';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Contacter';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '联系';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
                                             href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
@@ -319,7 +382,14 @@ if (!isset($_SESSION['lan'])) {
                     </div>
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix text-center">
-                            <h4 class="ls0 nott">Social Media</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Social Media';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Médias sociaux';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '社交媒体';
+                                ?></h4>
                             <a href="https://www.facebook.com/profile.php?id=100093621810139">
                                 <span class="icon-facebook" style="margin-right: 15px;"></span>
                             </a>

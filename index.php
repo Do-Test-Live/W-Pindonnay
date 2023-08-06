@@ -104,10 +104,10 @@ if (!isset($_SESSION['lan'])){
                     ============================================= -->
                     <div id="logo">
                         <a class="standard-logo" data-dark-logo="demos/recipes/images/logo.png"
-                           data-sticky-logo="demos/recipes/images/logo.png" href="index.html">
+                           data-sticky-logo="demos/recipes/images/logo.png" href="index.php">
                             <img alt="" id="logonew" src="demos/recipes/images/logo.png">
                         </a>
-                        <a class="retina-logo" href="index.html">
+                        <a class="retina-logo" href="index.php">
                             <img alt="" src="demos/recipes/images/logo.png">
                         </a>
                     </div><!-- #logo end -->
@@ -127,30 +127,51 @@ if (!isset($_SESSION['lan'])){
 
                         <ul class="menu-container">
                             <li class="menu-item current">
-                                <a class="menu-link" href="index.html">
+                                <a class="menu-link" href="index.php">
                                     <div><?php
                                         if($_SESSION['lan'] == 'EN')
                                             echo 'Home';
                                         elseif ($_SESSION['lan'] == 'FR')
-                                            echo 'Home FR';
+                                            echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo 'Home CN';
+                                            echo '家';
                                         ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -434,15 +455,43 @@ if (!isset($_SESSION['lan'])){
 
                         <div class="col-md-4 mt-4">
                             <div class="card border-0 shadow-sm">
-                                <h3 class="text-center pt-3 mb-3">
-                                    Discover Bourgogne
+                                <h3 class="text-center pt-3 mb-3"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'Discover Bourgogne';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Découvrir la Bourgogne';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '探索勃艮第';
+                                    ?>
+
                                 </h3>
                                 <img alt="Image" class="card-img-top" src="images/discover.png">
                                 <div class="card-body" style="padding: 40px">
-                                    <h4 class="card-title mb-3">TroisGros</h4>
-                                    <p class="card-text">As soon as you enter from afar, the 'Leafless Wood appears
-                                        mysterious': could it be an enchanted forest? Appearances, </p>
-                                    <a class="card-link stretched-link" href="#">Learn More <i
+                                    <h4 class="card-title mb-3"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'TroisGros';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'TroisGros';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '特瓦格罗';
+                                        ?></h4>
+                                    <p class="card-text"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'As soon as you enter from afar, the \'Leafless Wood appears
+                                        mysterious\': could it be an enchanted forest? Appearances,';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Se laissant apercevoir dès l\'entrée dans le lointain, le \'Bois sans feuilles paraît mystérieux\': ne s\'agirait-il pas d\'un bois enchanté?Apparitions, ';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '一进门就让人眼前一亮，“无叶林似有玄机”：莫非是被施了魔法的森林？出现，消失，';
+                                        ?></p>
+                                    <a class="card-link stretched-link" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Learn More';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'En savoir plus';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '了解更多';
+                                        ?><i
                                             class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
                                 </div>
                             </div>
@@ -450,15 +499,43 @@ if (!isset($_SESSION['lan'])){
 
                         <div class="col-md-4 mt-4">
                             <div class="card border-0 shadow-sm">
-                                <h3 class="text-center pt-3 mb-3">
-                                    Wine Tourism
-                                </h3>
+                                <h3 class="text-center pt-3 mb-3"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'Wine Tourism';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Tourisme viticole';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '葡萄酒旅游';
+                                    ?></h3>
                                 <img alt="Image" class="card-img-top" src="images/Ttourisme.png">
                                 <div class="card-body" style="padding: 40px">
-                                    <h4 class="card-title mb-3">Wine Tourism</h4>
-                                    <p class="card-text">Burgundy is the land of wine, where the top-notch wines make
-                                        all the wine connoisseurs swoon. Furthermore, </p>
-                                    <a class="card-link stretched-link" href="#">Learn More <i
+                                    <h4 class="card-title mb-3"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Wine Tourism';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Tourisme viticole';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '葡萄酒旅游';
+                                        ?></h4>
+                                    <p class="card-text"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Burgundy is the land of wine, where the top-notch wines make
+                                        all the wine connoisseurs swoon. Furthermore';
+
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'La Bourgogne est la terre du vin, un lieu qui attire tous les amateurs de vin grâce à ses réputations prestigieuses. De plus';
+
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '勃艮第是葡萄酒之鄉，這裡有著讓所有葡萄酒愛好者都傾慕的頂級葡萄酒，同時';
+                                        ?></p>
+                                    <a class="card-link stretched-link" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Learn More';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'En savoir plus';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '了解更多';
+                                        ?><i
                                             class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
                                 </div>
                             </div>
@@ -513,19 +590,61 @@ if (!isset($_SESSION['lan'])){
                 <div class="row">
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Support';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Soutien';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '支持';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de" or "Sur';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'FAQs';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Questions fréquemment posées';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '常见问题';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Support';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Soutien';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '支持';
+                                        ?></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Contact';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Contacter';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '联系';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
                                         href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
@@ -543,7 +662,14 @@ if (!isset($_SESSION['lan'])){
                     </div>
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix text-center">
-                            <h4 class="ls0 nott">Social Media</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Social Media';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Médias sociaux';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '社交媒体';
+                                ?></h4>
                             <a href="https://www.facebook.com/profile.php?id=100093621810139">
                                 <span class="icon-facebook" style="margin-right: 15px;"></span>
                             </a>
