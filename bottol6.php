@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -32,9 +41,9 @@
     <link href="include/rs-plugin/css/addons/revolution.addon.liquideffect.css" rel="stylesheet" type="text/css">
 
     <!--  Recipes Demo Specific Stylesheet -->
-    <link rel="stylesheet" href="demos/music/music.css" type="text/css"/>
-    <link rel="stylesheet" href="demos/music/css/fonts.css" type="text/css"/>
-    <link rel="stylesheet" href="demos/music/css/mediaelement/mediaelementplayer.css">
+    <link href="demos/music/music.css" rel="stylesheet" type="text/css"/>
+    <link href="demos/music/css/fonts.css" rel="stylesheet" type="text/css"/>
+    <link href="demos/music/css/mediaelement/mediaelementplayer.css" rel="stylesheet">
     <link href="css/colors5533.css?color=267DF4" rel="stylesheet" type="text/css"/> <!-- Theme Color -->
     <link href="demos/recipes/css/fonts.css" rel="stylesheet" type="text/css"/> <!-- Theme Font -->
     <link href="demos/recipes/recipes.css" rel="stylesheet" type="text/css"/> <!-- Theme Custom CSS -->
@@ -124,46 +133,82 @@
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.php">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                <a class="menu-link" href="video.php">
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -189,60 +234,23 @@
     <section style="background-color: #f9f9f9;">
         <div class="container">
             <div class="content-wrap" style="overflow: visible;">
-                <div class="row">
-                    <div class="col-lg-8 col-12" style="text-align: justify; height: 600px; overflow-y: scroll;">
-                        <p style="font-size: 17px;">2022 may be a good year, or at the very least a year filled with
-                            anticipation for the Burgundy winegrowers. After enduring two consecutive years of poor
-                            harvests in 2020 and 2021, particularly the sharp production decline caused by the severe
-                            frost of 2021, Burgundy's winegrowers are in desperate need of a good vintage to replenish
-                            their losses of the past two years.</p>
-                        <p style="font-size: 17px;">Marsannay village, the closest wine village to Dijon, is also the
-                            northernmost village in Côtes de Nuits. Should wine enthusiasts be asked to name the finest
-                            winery in Marsannay, undoubtedly Domaine Bruno Claire will be among the most mentioned.</p>
-                        <p style="font-size: 17px;">In the scorching heat of May in Burgundy, a few days before visiting
-                            the winery, I coincidentally encountered Edouard (Bruno Claire's son) while shooting a video
-                            in the premier cru of Clos St Jacques, where he is responsible for vineyard management.
-                            Although our conversation in the vineyard was brief, Edouard was gracious and patiently
-                            explained the details of their vineyard management.</p>
-                        <p style="font-size: 17px;">On the day of the visit, Arthur (another son of Bruno Claire
-                            responsible for the cellar management) led us to the underground cellar for a barrel-side
-                            Dégustation. During this visit, we tasted many wines that we had not tasted before, such as
-                            La Dominode from Savigny les Beaune, Premier Cru, which left a deep impression on me. As
-                            always, with a high degree of recognition, regardless of which wine from Domaine Bruno
-                            Claire, they all exhibit the characteristics of delicacy, elegance and lightness, which is
-                            why they are highly favored by Asian wine enthusiasts.</p>
-                        <p style="font-size: 17px;">When we tasted Les Longeroies, Arthur introduced it by saying,
-                            "Although the upgrading process is not yet complete, in our hearts, this vineyard in
-                            Marsannay has already reached the level of a premier cru vineyard. In fact, before this
-                            visit, I had already tasted other vintages from Bruno Claire's vineyard, so I completely
-                            agree with Arthur's statement."</p>
-                        <p style="font-size: 17px;">Although Marsannay is not classified as a first-class vineyard
-                            according to regulations, the vineyards owned by Bruno Claire, such as Les Grasses Têtes and
-                            Les Longeroies, are definitely two of the vineyards that should be upgraded to premier cru
-                            .</p>
-                        <p style="font-size: 17px;">Apart from possessing exceptional vineyards, Arthur has recently
-                            leased a number of vineyards such as the premier field Les Charmes in Chambolle-Musigny.
-                            Arthur has left his personal mark on this premier field and it has exhibited a remarkable
-                            performance under his hand. It is an impressive and outstanding Burgundy wine that leaves a
-                            lasting impression.</p>
-                        <p style="font-size: 17px;">Many Asian consumers consider Clos de bèze to be the most
-                            representative wine of Domaine Bruno Claire. However, after tasting the Bonne Mares Grand
-                            Cru, I was completely conquered by the wine's depth, elegance, calmness, and perfectly
-                            balanced exuberance. Its complex aroma of red fruits, herbs, licorice, slight smokiness,
-                            unbelievable acidity, delicate yet textured tannins, grand structure paired with a light
-                            body and a lingering finish. Even though it is still maturing in barrels, its astounding
-                            potential can already be felt. It is unfortunate that we drank it a bit too early. If tasted
-                            again after 20 years, it will surely be an unbelievable top-tier wine.</p>
-                        <p style="font-size: 17px;">In the cellar, I had the complete pleasure of tasting Bruno Clair's
-                            series of wines along with Arthur's detailed explanations, allowing me to gain a deeper
-                            understanding of Bruno Clair's wines and inspiring all supporters of this vineyard. Under
-                            the management of Edouard and Arthur, we eagerly anticipate Domaine Bruno Clair's ability to
-                            bring us more heart-stirring wines.</p>
-                    </div>
-                    <div class="col-lg-4 col-12 mx-auto">
-                        <div class="image-container d-flex justify-content-center">
-                            <img src="images/bottol/1.png">
-                        </div>
+                <div class="row clearfix flex align-items-center justify-content-center">
+                    <div class="image-container">
+                        <a href="#">
+                            <img alt="Image 1" class="img-fluid" src="images/bottol/bottol6/1.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 2" class="img-fluid" src="images/bottol/bottol6/2.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 3" class="img-fluid" src="images/bottol/bottol6/3.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 4" class="img-fluid" src="images/bottol/bottol6/4.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 5" class="img-fluid" src="images/bottol/bottol6/5.webp">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -263,24 +271,66 @@
                 <div class="row">
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Support';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Soutien';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '支持';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de" or "Sur';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'FAQs';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Questions fréquemment posées';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '常见问题';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Support';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Soutien';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '支持';
+                                        ?></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Contact';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Contacter';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '联系';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
-                                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
+                                            href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
                                 <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
-                                        href="tel:+85256408956">(+852) 56408956</a></li>
+                                            href="tel:+85256408956">(+852) 56408956</a></li>
                             </ul>
                         </div>
                         <div class="clearfix" id="instagram">
@@ -293,7 +343,14 @@
                     </div>
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix text-center">
-                            <h4 class="ls0 nott">Social Media</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Social Media';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Médias sociaux';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '社交媒体';
+                                ?></h4>
                             <a href="https://www.facebook.com/profile.php?id=100093621810139">
                                 <span class="icon-facebook" style="margin-right: 15px;"></span>
                             </a>

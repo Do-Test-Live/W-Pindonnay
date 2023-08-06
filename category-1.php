@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -32,9 +42,6 @@
     <link href="include/rs-plugin/css/addons/revolution.addon.liquideffect.css" rel="stylesheet" type="text/css">
 
     <!--  Recipes Demo Specific Stylesheet -->
-    <link href="demos/music/music.css" rel="stylesheet" type="text/css"/>
-    <link href="demos/music/css/fonts.css" rel="stylesheet" type="text/css"/>
-    <link href="demos/music/css/mediaelement/mediaelementplayer.css" rel="stylesheet">
     <link href="css/colors5533.css?color=267DF4" rel="stylesheet" type="text/css"/> <!-- Theme Color -->
     <link href="demos/recipes/css/fonts.css" rel="stylesheet" type="text/css"/> <!-- Theme Font -->
     <link href="demos/recipes/recipes.css" rel="stylesheet" type="text/css"/> <!-- Theme Custom CSS -->
@@ -124,46 +131,82 @@
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.php">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                <a class="menu-link" href="video.php">
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -186,32 +229,66 @@
 
     <!-- Content
     ============================================= -->
-    <section style="background-color: #f9f9f9;">
-        <div class="container">
-            <div class="content-wrap" style="overflow: visible;">
-                <div class="row clearfix flex align-items-center justify-content-center">
-                    <div class="image-container">
-                        <a href="#">
-                            <img alt="Image 1" class="img-fluid" src="images/bottol/bottol2/1.webp">
-                        </a>
-                        <a href="#">
-                            <img alt="Image 2" class="img-fluid" src="images/bottol/bottol2/2.webp">
-                        </a>
-                        <a href="#">
-                            <img alt="Image 3" class="img-fluid" src="images/bottol/bottol2/3.webp">
-                        </a>
-                        <a href="#">
-                            <img alt="Image 4" class="img-fluid" src="images/bottol/bottol2/4.webp">
-                        </a>
-                        <a href="#">
-                            <img alt="Image 5" class="img-fluid" src="images/bottol/bottol2/5.webp">
-                        </a>
+    <section id="content" style="background-color: #f9f9f9;">
+        <div class="content-wrap pb-0" style="overflow: visible;">
+
+            <div class="section mt-2 bg-transparent">
+                <div class="container">
+                    <div class="row text-center mb-5">
+                        <div class="col-6">
+                            <img src="images/categories/details-1.png" class="img-fluid" alt="logo">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/categories/details-1a.png" class="img-fluid" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: justify">
+                        <div class="col-12">
+                            <p>Vincent Palloti was among the noble in Spain, his youthful age marked with appointment as
+                                a deacon by Valerius who served as Bishop of Saragosse and was a notable figure on the
+                                Council of Elvira in those times. Subsequently, Vincent was promoted to an archdeacon
+                                and given the responsibility of overseeing the diocese of Saragosse. It was in the
+                                fateful year of 304 when the Roman Emperor Diocletian unleashed a terrible persecution
+                                against the Christians that Vincent, along with his bishop, became an early martyr.He
+                                finally died on January 22nd of that year, supposedly crushed to death under a grape
+                                press.</p>
+                            <p>Saint Vincent is famous as the god of wine and is also regarded as the protector of every
+                                winegrower, watching over their vineyards from generation to generation. The most
+                                widespread theory comes from the play on words Vincent, Vincent, which means both "wine"
+                                and "blood", the blood of the vine or referring to the Church tradition that the wine of
+                                divine service recalled the blood of Christ.Furthermore, there is a story of Saint
+                                Vincent in the vineyards. According to legend, one day Saint Vincent stopped to talk to
+                                a vineyard worker as he passed by a vineyard, during which his donkey ate the young vine
+                                shoots on the side. However, during the following harvest, the vineyard worker found
+                                that the vine eaten by Saint Vincent's donkey yielded more than the other vines that had
+                                not been eaten, so the vineyard worker dedicated Saint Vincent's donkey as the inventor
+                                of vine pruning.The pruning of Burgundy vineyards is strictly carried out in accordance
+                                with the decree of February 8, 1946 and the orders of March 15, 1944 and September 17,
+                                1956, which establish the regulatory periods provided for this task. Therefore, no vine
+                                pruning will be carried out before the feast of Saint Vincent (January 22nd). However,
+                                these legal provisions were not established with reference to the legend of Saint
+                                Vincent, but based on the production cycles of the vine.During the 20th century, the
+                                secularization of French society nearly caused the disappearance of the feast of Saint
+                                Vincent. Only a few villages in Burgundy maintained this tradition, simply celebrating
+                                the feast during the end-of-year pig roast. </p>
+                            <p>On January 22, 1938, the Brotherhood of the Knights of the Tastevin restored the
+                                procession of Saint Vincent in Chambolle-Musigny. Today, more than 85 Winegrowers'
+                                Societies participate in the Saint Vincent Tournante every last weekend of January.This
+                                festival has become a major annual event in the wine circle of Burgundy, attracting tens
+                                of thousands of local and international visitors each year to participate in this grand
+                                celebration. </p>
+                            <p>Outside of Burgundy, in other wine regions of France, as well as in the Spanish wine
+                                regions of Rioja, Navarre, and Penedès, parades and celebrations of Saint Vincent are
+                                also organized. However, Saint Vincent celebrations in other regions cannot in any way
+                                compete with the Saint Vincent Tournante of Burgundy in terms of renown and size.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
-    </section>
-    <!-- #content end -->
+    </section><!-- #content end -->
 
     <!-- Footer
     ============================================= -->
@@ -226,24 +303,66 @@
                 <div class="row">
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Support';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Soutien';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '支持';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de" or "Sur';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'FAQs';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Questions fréquemment posées';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '常见问题';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Support';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Soutien';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '支持';
+                                        ?></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Contact';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Contacter';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '联系';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
-                                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
+                                            href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
                                 <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
-                                        href="tel:+85256408956">(+852) 56408956</a></li>
+                                            href="tel:+85256408956">(+852) 56408956</a></li>
                             </ul>
                         </div>
                         <div class="clearfix" id="instagram">
@@ -256,7 +375,14 @@
                     </div>
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix text-center">
-                            <h4 class="ls0 nott">Social Media</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Social Media';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Médias sociaux';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '社交媒体';
+                                ?></h4>
                             <a href="https://www.facebook.com/profile.php?id=100093621810139">
                                 <span class="icon-facebook" style="margin-right: 15px;"></span>
                             </a>
@@ -328,8 +454,6 @@
 <script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-
-<script src="demos/music/js/mediaelement/mediaelement-and-player.js"></script>
 
 <!-- Footer Scripts
 ============================================= -->

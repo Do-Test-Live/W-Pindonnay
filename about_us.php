@@ -151,7 +151,7 @@ if (!isset($_SESSION['lan'])) {
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
+                                <a class="menu-link" href="video.php">
                                     <div><?php
                                         if($_SESSION['lan'] == 'EN')
                                             echo 'Videos';

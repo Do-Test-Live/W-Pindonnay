@@ -151,7 +151,7 @@ if (!isset($_SESSION['lan'])){
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
+                                <a class="menu-link" href="video.php">
                                     <div><?php
                                         if($_SESSION['lan'] == 'EN')
                                             echo 'Videos';
@@ -274,7 +274,7 @@ if (!isset($_SESSION['lan'])){
                         </div>
                         <div class="col-12 mt-5 mb-3">
                             <div class="recipe-categories justify-content-center">
-                                <a class="recipe-category" data-animate="fadeInUp" href="category-1.html"
+                                <a class="recipe-category" data-animate="fadeInUp" href="category-1.php"
                                    style="background-image: url('images/categories/1.png');">
                                 </a>
 
@@ -338,7 +338,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body text-center">
                                         <img alt="image" src="demos/recipes/images/popular/1.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol1.html">Côte de l’exploration</a></h3>
+                                                                       href="bottol1.php">Côte de l’exploration</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -349,7 +349,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body text-center">
                                         <img alt="image" src="demos/recipes/images/popular/2.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol2.html">L’Yonne</a></h3>
+                                                                       href="bottol2.php">L’Yonne</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body">
                                         <img alt="image" src="demos/recipes/images/popular/3.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol3.html">Côte de Nuits</a></h3>
+                                                                       href="bottol3.php">Côte de Nuits</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body text-center">
                                         <img alt="image" src="demos/recipes/images/popular/4.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol4.html">Côte de Beaune</a></h3>
+                                                                       href="bottol4.php">Côte de Beaune</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +382,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body text-center">
                                         <img alt="image" src="demos/recipes/images/popular/5.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol5.html">Côte Chalonnaise</a></h3>
+                                                                       href="bottol5.php">Côte Chalonnaise</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +393,7 @@ if (!isset($_SESSION['lan'])){
                                     <div class="card-body text-center">
                                         <img alt="image" src="demos/recipes/images/popular/6.png">
                                         <h3 class="card-title mt-3"><a class="stretched-link"
-                                                                       href="bottol6.html">Mâconnais</a></h3>
+                                                                       href="bottol6.php">Mâconnais</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -410,11 +410,24 @@ if (!isset($_SESSION['lan'])){
                         <div class="row no-gutters align-items-stretch rounded shadow">
                             <div class="col-lg-12 d-flex justify-content-center flex-column rounded-right"
                                  style="padding: 80px 50px">
-                                <h3>What to do about global warming, as expressed by Domaine Comte Armand</h3>
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable
+                                <h3><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'What to do about global warming, as expressed by Domaine Comte Armand';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Que faire face au réchauffement climatique, tel qu\'exprimé par le Domaine Comte Armand.';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '关于全球变暖，Domaine Comte Armand 的表达是什么？';
+                                    ?></h3>
+                                <p><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'It is a long established fact that a reader will be distracted by the readable
                                     content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                                    it has a more-or-less normal distribution of letters.
+                                    it has a more-or-less normal distribution of letters.';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Il est un fait établi de longue date que le lecteur sera distrait par le contenu lisible d\'une page lorsqu\'il regarde sa mise en page. Le but d\'utiliser Lorem Ipsum est qu\'il a une distribution de lettres plus ou moins normale.';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '长期以来，有一个已经确立的事实是，读者在查看页面布局时会被可读内容所分散注意力。使用Lorem Ipsum的目的是它具有或多或少的正常字母分布。';
+                                    ?>
                                 </p>
                                 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen frameborder="0"
@@ -433,8 +446,14 @@ if (!isset($_SESSION['lan'])){
                     <div class="row clearfix">
                         <div class="col-md-4 mt-4">
                             <div class="card border-0 shadow-sm">
-                                <h3 class="text-center mb-3 pt-3">
-                                    The View from the Vineyard
+                                <h3 class="text-center mb-3 pt-3"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'The View from the Vineyard';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'La vue depuis le vignoble';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '葡萄园的景色';
+                                    ?>
                                 </h3>
                                 <a href="https://www.youtube.com/embed/fWzimfoosMo" target="_blank">
                                     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -444,10 +463,31 @@ if (!isset($_SESSION['lan'])){
                                             width="410"></iframe>
                                 </a>
                                 <div class="card-body" style="padding: 40px">
-                                    <h4 class="card-title mb-3">How to Make Paper Piping-Bag</h4>
-                                    <p class="card-text">Authoritatively productize 24/7 platforms authoritatively
-                                        rather than enterprise customer service.</p>
-                                    <a class="card-link stretched-link" href="#">Learn More <i
+                                    <h4 class="card-title mb-3"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'How to Make Paper Piping-Bag';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Comment fabriquer une poche à douille en papier';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '如何制作纸质裱花袋';
+                                        ?></h4>
+                                    <p class="card-text"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Authoritatively productize 24/7 platforms authoritatively
+                                        rather than enterprise customer service.';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Produire de manière autoritaire des plateformes 24/7 plutôt qu\'un service client d\'entreprise.';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '权威地使产品化24/7平台，而不是企业客户服务。';
+                                        ?></p>
+                                    <a class="card-link stretched-link" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Learn More';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'En savoir plus';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '了解更多';
+                                        ?><i
                                             class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
                                 </div>
                             </div>

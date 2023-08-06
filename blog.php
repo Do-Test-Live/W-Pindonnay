@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
 include('include/dbController.php');
 $db_handle = new DBController();
 ?>
@@ -74,44 +78,80 @@ $db_handle = new DBController();
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.php">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                <a class="menu-link" href="video.php">
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
                                             <div>
                                                 <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
                                             </div>
                                         </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
                                             <div><img src="images/flag/united-kingdom.png"
                                                       style="height: 40px; width: 40px;"></div>
                                         </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
                                             <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
                                         </a></li>
                                 </ul>

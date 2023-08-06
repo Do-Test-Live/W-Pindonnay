@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -119,56 +127,92 @@
 
           <!-- Primary Navigation
           ============================================= -->
-          <nav class="primary-menu">
+            <nav class="primary-menu">
 
-            <ul class="menu-container">
-              <li class="menu-item current">
-                <a class="menu-link" href="index.php">
-                  <div>Home</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="about_us.php">
-                  <div>About Us</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="video.html">
-                  <div>Videos</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">
-                  <div>News</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">
-                  <div>
-                    <img src="images/flag/united-kingdom.png"
-                         style="height: 25px; width: 25px;">
-                    <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
-                  </div>
-                </a>
-                <ul class="sub-menu-container rounded-bottom">
-                  <div class="dropdown-divider my-0"></div>
-                  <li class="menu-item"><a class="menu-link" href="#">
-                    <div>
-                      <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                    </div>
-                  </a></li>
-                  <li class="menu-item"><a class="menu-link" href="#">
-                    <div><img src="images/flag/united-kingdom.png"
-                              style="height: 40px; width: 40px;"></div>
-                  </a></li>
-                  <li class="menu-item"><a class="menu-link" href="#">
-                    <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                  </a></li>
+                <ul class="menu-container">
+                    <li class="menu-item current">
+                        <a class="menu-link" href="index.php">
+                            <div><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Home';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Maison';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '家';
+                                ?></div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="about_us.php">
+                            <div><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'About Us';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'À propos de nous';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '关于我们';
+                                ?></div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="video.php">
+                            <div><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Videos';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Vidéos';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '视频';
+                                ?></div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <div><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'News';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Actualités';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '新闻';
+                                ?></div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <div>
+                                <img src="<?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo "images/flag/hong-kong.png";
+                                elseif ($_SESSION['lan'] == 'EN')
+                                    echo "images/flag/united-kingdom.png";
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo "images/flag/france.png";
+
+                                ?>"
+                                     style="height: 25px; width: 25px;">
+                                <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
+                            </div>
+                        </a>
+                        <ul class="sub-menu-container rounded-bottom">
+                            <div class="dropdown-divider my-0"></div>
+                            <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
+                                    <div>
+                                        <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                    </div>
+                                </a></li>
+                            <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
+                                    <div><img src="images/flag/united-kingdom.png"
+                                              style="height: 40px; width: 40px;"></div>
+                                </a></li>
+                            <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
+                                    <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                </a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
 
-          </nav><!-- #primary-menu end -->
+            </nav><!-- #primary-menu end -->
 
           <form action="#" class="top-search-form"
                 method="get">
@@ -189,100 +233,17 @@
   <section style="background-color: #f9f9f9;">
     <div class="container">
       <div class="content-wrap" style="overflow: visible;">
-        <div class="row clearfix">
-          <div class="col-lg-6">
-            <div class="heading-block border-0 dark" style="margin-bottom: 15px;">
-              <h3>Vineyards</h3>
-            </div>
-
-            <div class="songs-lists-wrap">
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">01</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/fWzimfoosMo" target="_blank" class="track-list"
-                     data-track="demos/music/tracks/searchin-lost-european.mp3"
-                     data-poster="demos/music/tracks/poster-images/searchin-lost-european.jpg"
-                     data-title="Searchin Lost European" data-singer="Lost European">
-                    <img src="images/video/vinyard-video-1.png"
-                         alt="Image 1"><span><i class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/fWzimfoosMo" target="_blank">Vineyard Highlight<br><span>Pindonnay Wine</span></a></div>
-              </div>
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">02</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/9LdLbIfCYMw" target="_blank" class="track-list"
-                     data-track="demos/music/tracks/fallin-extended-mix.mp3"
-                     data-poster="demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-                     data-title="Fallin Extended Mix" data-singer="Justin">
-                    <img src="images/video/vinyard-video-2.png"
-                         alt="Image 1"><span><i class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/9LdLbIfCYMw">vineyard video 1<br><span>Pindonnay Wine</span></a></div>
-              </div>
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">03</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/_S1KTSIpMLA" target="_blank" class="track-list" data-track="demos/music/tracks/maq-amor.mp3"
-                     data-poster="demos/music/tracks/poster-images/maq-amor.jpg" data-title="Maq Amor"
-                     data-singer="The Universe">
-                    <img src="images/video/vinyard-highlight-video.png" alt="Image 1"><span><i
-                          class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/_S1KTSIpMLA">vinyard video 2<br><span>Pindonnay Wine</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-100 d-block d-md-block d-lg-none topmargin-lg clear"></div>
-          <div class="col-lg-6">
-            <div class="heading-block border-0 dark" style="margin-bottom: 15px;">
-              <h3>Interviews</h3>
-            </div>
-            <div class="songs-lists-wrap">
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">01</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/aY_7dOuQbbc" target="_blank" class="track-list"
-                     data-track="demos/music/tracks/searchin-lost-european.mp3"
-                     data-poster="demos/music/tracks/poster-images/searchin-lost-european.jpg"
-                     data-title="Searchin Lost European" data-singer="Lost European">
-                    <img src="images/video/interview-video--1.png"
-                         alt="Image 1"><span><i class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/aY_7dOuQbbc">Interview Highlight video<br><span>Pindonnay Wine</span></a></div>
-              </div>
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">02</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/7LOirb1N90g" target="_blank" class="track-list"
-                     data-track="demos/music/tracks/fallin-extended-mix.mp3"
-                     data-poster="demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-                     data-title="Fallin Extended Mix" data-singer="Justin">
-                    <img src="images/video/interview-video--2.png"
-                         alt="Image 1"><span><i class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/7LOirb1N90g" target="_blank">Interview Vedio 1<br><span>Pindonnay Wine</span></a></div>
-              </div>
-
-              <div class="songs-list">
-                <div class="songs-number col-auto">03</div>
-                <div class="songs-image track-image col-auto">
-                  <a href="https://youtu.be/FsPuwaTKOn8" target="_blank" class="track-list" data-track="demos/music/tracks/maq-amor.mp3"
-                     data-poster="demos/music/tracks/poster-images/maq-amor.jpg" data-title="Maq Amor"
-                     data-singer="The Universe">
-                    <img src="images/video/interview-highlight-video.png" alt="Image 1"><span><i
-                          class="icon-play"></i></span></a>
-                </div>
-                <div class="songs-name track-name flex-grow-1 col-auto"><a href="https://youtu.be/FsPuwaTKOn8" target="_blank">Interview Vedion 2<br><span>The Universe</span></a>
-                </div>
-              </div>
-            </div>
+        <div class="row clearfix flex align-items-center justify-content-center">
+          <div class="image-container">
+            <a href="bottol_details.php">
+              <img src="images/bottol/1.png" alt="Image 1">
+            </a>
+            <a href="bottol_details.php">
+            <img src="images/bottol/2.png" alt="Image 2">
+            </a>
+            <a href="bottol_details.php">
+            <img src="images/bottol/3.png" alt="Image 3">
+            </a>
           </div>
         </div>
       </div>
@@ -298,57 +259,106 @@
 
       <!-- Footer Widgets
       ============================================= -->
-      <div class="footer-widgets-wrap">
+        <div class="footer-widgets-wrap">
 
-        <div class="row">
-          <div class="col-lg-4 text-left">
-            <div class="widget clearfix">
-              <h4 class="ls0 nott">Support</h4>
-              <ul class="list-unstyled ml-0">
-                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
-              </ul>
-            </div>
-          </div>
+            <div class="row">
+                <div class="col-lg-4 text-left">
+                    <div class="widget clearfix">
+                        <h4 class="ls0 nott"><?php
+                            if($_SESSION['lan'] == 'EN')
+                                echo 'Support';
+                            elseif ($_SESSION['lan'] == 'FR')
+                                echo 'Soutien';
+                            elseif ($_SESSION['lan'] == 'CN')
+                                echo '支持';
+                            ?></h4>
+                        <ul class="list-unstyled ml-0">
+                            <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'Home';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Maison';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '家';
+                                    ?></a></li>
+                            <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'About';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'À propos de" or "Sur';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '关于';
+                                    ?></a></li>
+                            <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'FAQs';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Questions fréquemment posées';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '常见问题';
+                                    ?></a></li>
+                            <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                    if($_SESSION['lan'] == 'EN')
+                                        echo 'Support';
+                                    elseif ($_SESSION['lan'] == 'FR')
+                                        echo 'Soutien';
+                                    elseif ($_SESSION['lan'] == 'CN')
+                                        echo '支持';
+                                    ?></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-          <div class="col-lg-4 text-left">
-            <div class="widget clearfix">
-              <h4 class="ls0 nott">Contact</h4>
-              <ul class="list-unstyled ml-0">
-                <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
-                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
-                <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
-                        href="tel:+85256408956">(+852) 56408956</a></li>
-              </ul>
+                <div class="col-lg-4 text-left">
+                    <div class="widget clearfix">
+                        <h4 class="ls0 nott"><?php
+                            if($_SESSION['lan'] == 'EN')
+                                echo 'Contact';
+                            elseif ($_SESSION['lan'] == 'FR')
+                                echo 'Contacter';
+                            elseif ($_SESSION['lan'] == 'CN')
+                                echo '联系';
+                            ?></h4>
+                        <ul class="list-unstyled ml-0">
+                            <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
+                                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
+                            <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
+                                        href="tel:+85256408956">(+852) 56408956</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix" id="instagram">
+                        <a href="#"><img alt="App Link" src="demos/recipes/images/whatsapp.jpg"
+                                         style="height: 92px;width: 92px;"></a>
+                        <a href="#"><img alt="App Link" class="mt-2"
+                                         src="demos/recipes/images/wechat.jpg"
+                                         style="height: 92px;width: 92px;"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-left">
+                    <div class="widget clearfix text-center">
+                        <h4 class="ls0 nott"><?php
+                            if($_SESSION['lan'] == 'EN')
+                                echo 'Social Media';
+                            elseif ($_SESSION['lan'] == 'FR')
+                                echo 'Médias sociaux';
+                            elseif ($_SESSION['lan'] == 'CN')
+                                echo '社交媒体';
+                            ?></h4>
+                        <a href="https://www.facebook.com/profile.php?id=100093621810139">
+                            <span class="icon-facebook" style="margin-right: 15px;"></span>
+                        </a>
+                        <a href="https://www.instagram.com/pindonnaywine/">
+                            <span class="icon-instagram" style="margin-right: 15px;"></span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC9BZqgdg3hLHgapjSvYh7Xw">
+                            <span class="icon-youtube" style="margin-right: 15px;"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="clearfix" id="instagram">
-              <a href="#"><img alt="App Link" src="demos/recipes/images/whatsapp.jpg"
-                               style="height: 92px;width: 92px;"></a>
-              <a href="#"><img alt="App Link" class="mt-2"
-                               src="demos/recipes/images/wechat.jpg"
-                               style="height: 92px;width: 92px;"></a>
-            </div>
-          </div>
-          <div class="col-lg-4 text-left">
-            <div class="widget clearfix text-center">
-              <h4 class="ls0 nott">Social Media</h4>
-              <a href="https://www.facebook.com/profile.php?id=100093621810139">
-                <span class="icon-facebook" style="margin-right: 15px;"></span>
-              </a>
-              <a href="https://www.instagram.com/pindonnaywine/">
-                <span class="icon-instagram" style="margin-right: 15px;"></span>
-              </a>
-              <a href="https://www.youtube.com/channel/UC9BZqgdg3hLHgapjSvYh7Xw">
-                <span class="icon-youtube" style="margin-right: 15px;"></span>
-              </a>
-            </div>
-          </div>
+
+
         </div>
-
-
-      </div>
 
     </div>
 

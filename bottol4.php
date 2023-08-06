@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['lan'])){
+    $_SESSION['lan'] = 'CN';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -124,46 +133,82 @@
                         <ul class="menu-container">
                             <li class="menu-item current">
                                 <a class="menu-link" href="index.php">
-                                    <div>Home</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="about_us.php">
-                                    <div>About Us</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About Us';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de nous';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于我们';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" href="video.html">
-                                    <div>Videos</div>
+                                <a class="menu-link" href="video.php">
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Videos';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Vidéos';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '视频';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
-                                    <div>News</div>
+                                    <div><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'News';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Actualités';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '新闻';
+                                        ?></div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <div>
-                                        <img src="images/flag/united-kingdom.png"
+                                        <img src="<?php
+                                        if ($_SESSION['lan'] == 'CN')
+                                            echo "images/flag/hong-kong.png";
+                                        elseif ($_SESSION['lan'] == 'EN')
+                                            echo "images/flag/united-kingdom.png";
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo "images/flag/france.png";
+
+                                        ?>"
                                              style="height: 25px; width: 25px;">
                                         <i class="icon-angle-down1 d-none d-lg-inline-block"></i>
                                     </div>
                                 </a>
                                 <ul class="sub-menu-container rounded-bottom">
                                     <div class="dropdown-divider my-0"></div>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div>
-                                            <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
-                                        </div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/united-kingdom.png"
-                                                  style="height: 40px; width: 40px;"></div>
-                                    </a></li>
-                                    <li class="menu-item"><a class="menu-link" href="#">
-                                        <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
-                                    </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=CN">
+                                            <div>
+                                                <img src="images/flag/hong-kong.png" style="height: 40px; width: 40px;">
+                                            </div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=EN">
+                                            <div><img src="images/flag/united-kingdom.png"
+                                                      style="height: 40px; width: 40px;"></div>
+                                        </a></li>
+                                    <li class="menu-item"><a class="menu-link" href="language.php?lan=FR">
+                                            <div><img src="images/flag/france.png" style="height: 40px; width: 40px;"></div>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -192,22 +237,35 @@
                 <div class="row clearfix flex align-items-center justify-content-center">
                     <div class="image-container">
                         <a href="#">
-                            <img alt="Image 1" class="img-fluid" src="images/bottol/bottol1/1.webp">
+                            <img alt="Image 1" class="img-fluid" src="images/bottol/bottol4/1.webp">
                         </a>
                         <a href="#">
-                            <img alt="Image 2" class="img-fluid" src="images/bottol/bottol1/2.webp">
+                            <img alt="Image 2" class="img-fluid" src="images/bottol/bottol4/2.webp">
                         </a>
                         <a href="#">
-                            <img alt="Image 3" class="img-fluid" src="images/bottol/bottol1/3.webp">
+                            <img alt="Image 3" class="img-fluid" src="images/bottol/bottol4/3.webp">
                         </a>
                         <a href="#">
-                            <img alt="Image 4" class="img-fluid" src="images/bottol/bottol1/4.webp">
+                            <img alt="Image 4" class="img-fluid" src="images/bottol/bottol4/4.webp">
                         </a>
                         <a href="#">
-                            <img alt="Image 5" class="img-fluid" src="images/bottol/bottol1/5.webp">
+                            <img alt="Image 5" class="img-fluid" src="images/bottol/bottol4/5.webp">
+                        </a>
+                    </div>
+                </div>
+                <div class="row clearfix flex align-items-center justify-content-center mt-5">
+                    <div class="image-container">
+                        <a href="#">
+                            <img alt="Image 6" class="img-fluid" src="images/bottol/bottol4/6.webp">
                         </a>
                         <a href="#">
-                            <img alt="Image 6" class="img-fluid" src="images/bottol/bottol1/6.webp">
+                            <img alt="Image 7" class="img-fluid" src="images/bottol/bottol4/7.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 8" class="img-fluid" src="images/bottol/bottol4/8.webp">
+                        </a>
+                        <a href="#">
+                            <img alt="Image 9" class="img-fluid" src="images/bottol/bottol4/9.webp">
                         </a>
                     </div>
                 </div>
@@ -229,24 +287,66 @@
                 <div class="row">
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Support</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Support';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Soutien';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '支持';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
-                                <li class="mb-2"><a class="text-black-50" href="#">Home</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">About</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">FAQs</a></li>
-                                <li class="mb-2"><a class="text-black-50" href="#">Support</a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Home';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Maison';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '家';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'About';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'À propos de" or "Sur';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '关于';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'FAQs';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Questions fréquemment posées';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '常见问题';
+                                        ?></a></li>
+                                <li class="mb-2"><a class="text-black-50" href="#"><?php
+                                        if($_SESSION['lan'] == 'EN')
+                                            echo 'Support';
+                                        elseif ($_SESSION['lan'] == 'FR')
+                                            echo 'Soutien';
+                                        elseif ($_SESSION['lan'] == 'CN')
+                                            echo '支持';
+                                        ?></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix">
-                            <h4 class="ls0 nott">Contact</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Contact';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Contacter';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '联系';
+                                ?></h4>
                             <ul class="list-unstyled ml-0">
                                 <li class="mb-2"><span class="icon-gmail" style="margin-right: 10px;"></span><a
-                                        href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
+                                            href="mailto:noreply@canvas.com">info@pindonnay.com</a></li>
                                 <li class="mb-2"><span class="icon-phone" style="margin-right: 10px;"></span><a
-                                        href="tel:+85256408956">(+852) 56408956</a></li>
+                                            href="tel:+85256408956">(+852) 56408956</a></li>
                             </ul>
                         </div>
                         <div class="clearfix" id="instagram">
@@ -259,7 +359,14 @@
                     </div>
                     <div class="col-lg-4 text-left">
                         <div class="widget clearfix text-center">
-                            <h4 class="ls0 nott">Social Media</h4>
+                            <h4 class="ls0 nott"><?php
+                                if($_SESSION['lan'] == 'EN')
+                                    echo 'Social Media';
+                                elseif ($_SESSION['lan'] == 'FR')
+                                    echo 'Médias sociaux';
+                                elseif ($_SESSION['lan'] == 'CN')
+                                    echo '社交媒体';
+                                ?></h4>
                             <a href="https://www.facebook.com/profile.php?id=100093621810139">
                                 <span class="icon-facebook" style="margin-right: 15px;"></span>
                             </a>
