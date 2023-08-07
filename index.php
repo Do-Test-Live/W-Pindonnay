@@ -134,7 +134,7 @@ if (!isset($_SESSION['lan'])){
                                         elseif ($_SESSION['lan'] == 'FR')
                                             echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo '家';
+                                            echo '主页';
                                         ?></div>
                                 </a>
                             </li>
@@ -645,7 +645,7 @@ if (!isset($_SESSION['lan'])){
                                         elseif ($_SESSION['lan'] == 'FR')
                                             echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo '家';
+                                            echo '主页';
                                         ?></a></li>
                                 <li class="mb-2"><a class="text-black-50" href="#"><?php
                                         if($_SESSION['lan'] == 'EN')

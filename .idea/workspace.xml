@@ -6,21 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd39793-1498-4b19-872b-8d42c464984d" name="Changes" comment="6/08/2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_us.php" beforeDir="false" afterPath="$PROJECT_DIR$/about_us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol1.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol3.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol4.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol5.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol6.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottol_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/bottol_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/category-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +100,8 @@
       <workItem from="1690022477073" duration="3601000" />
       <workItem from="1691231521163" duration="5937000" />
       <workItem from="1691298864518" duration="4442000" />
-      <workItem from="1691314605368" duration="5131000" />
+      <workItem from="1691314605368" duration="5296000" />
+      <workItem from="1691320433892" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Corporate Website Initialized.">
       <created>1617448116439</created>

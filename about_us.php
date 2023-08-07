@@ -134,7 +134,7 @@ if (!isset($_SESSION['lan'])) {
                                         elseif ($_SESSION['lan'] == 'FR')
                                             echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo '家';
+                                            echo '主页';
                                         ?></div>
                                 </a>
                             </li>
@@ -275,7 +275,7 @@ if (!isset($_SESSION['lan'])) {
                                                     <p>En dehors de la Bourgogne, dans d\'autres régions viticoles de France, ainsi que dans les régions viticoles espagnoles de Rioja, Navarre et Penedès, des défilés et célébrations de saint Vincent sont également organisés. Cependant, les célébrations de saint Vincent dans les autres régions ne peuvent en aucun cas rivaliser avec la Saint Vincent Tournante de Bourgogne en termes de renommée et de taille.</p>
                                         ';
                             elseif ($_SESSION['lan'] == 'CN')
-                                echo '<p>Vincent PALLOTI 出生於西班牙的貴族家庭，在很年輕的時候，他就被萨拉戈萨主教瓦勒里乌斯（Valerius）任命为执事，當時他是埃尔维拉会议（300-330）的成员之一，然后更成為大执事，负责管理萨拉戈萨教区的财产。</p>
+                                echo '<p>Vincent PALLOTI 出生於西班牙的貴族主页庭，在很年輕的時候，他就被萨拉戈萨主教瓦勒里乌斯（Valerius）任命为执事，當時他是埃尔维拉会议（300-330）的成员之一，然后更成為大执事，负责管理萨拉戈萨教区的财产。</p>
                                         <p>304年，羅馬帝國皇帝戴克里先對基督徒展開了大規模的迫害，Vincent PALLOTI是第一批隨著主教而受害的基督徒之一，最終在當年的1月22日逝世，相傳是被壓在葡萄壓榨機上折磨致死。</p>
                                        
                                         <p> Saint Vincent 被譽為葡萄酒的酒神，也是每一位葡萄酒農的守護神，世代守護著他們的葡萄園。最廣為流傳的一個說法是來自他一語雙關的名字 vincent，意指 vin sang，教會認為葡萄酒是耶穌基督的血。</p>
@@ -325,7 +325,7 @@ if (!isset($_SESSION['lan'])) {
                                         elseif ($_SESSION['lan'] == 'FR')
                                             echo 'Maison';
                                         elseif ($_SESSION['lan'] == 'CN')
-                                            echo '家';
+                                            echo '主页';
                                         ?></a></li>
                                 <li class="mb-2"><a class="text-black-50" href="#"><?php
                                         if($_SESSION['lan'] == 'EN')
